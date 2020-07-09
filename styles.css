@@ -1,0 +1,279 @@
+/* global */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    line-height: 1.2;
+    font-size: 1em;
+    color: #fff;
+}
+
+.container {
+    /* background: linear-gradient(45deg, #f9484a, #fbd72b); */
+    background: linear-gradient(180deg, #ee5a24, rgb(240, 197, 157));
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container > div {
+    animation: anim 0.5s;
+}
+@keyframes anim {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+}
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* sec 1 */
+
+#sec-1 {
+    position: relative;
+    width: 500px;
+    transform: translateY(-15%);
+}
+#sec-1 h1 {
+    text-align: center;
+    color: #fff;
+    margin: 2rem auto;
+    text-transform: capitalize;
+    font-size: 5rem;
+}
+#sec-1 .form-group {
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.error {
+    padding-top: 0.5rem;
+    display: block;
+    margin: 8px 0;
+    color: #ff1e00;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+
+label {
+    color: #fff;
+    font-weight: 500;
+    font-size: 2rem;
+}
+input {
+    background: #fff;
+    color: #f36507;
+    width: 20rem;
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+input,
+button {
+    height: 3.5rem;
+    border: none;
+    outline: none;
+    border-radius: 1rem;
+    padding: 0 30px;
+}
+
+/* buttons */
+
+.gradient-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.gradient-buttons .btn,
+.gradient-button .btn {
+    font-family: "Indie Flower", cursive;
+    font-size: 1.2rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    background-size: 200%;
+    transition: 0.6s;
+    letter-spacing: 0.2rem;
+    width: 10rem;
+}
+.gradient-buttons .btn1,
+.gradient-button .btn1 {
+    background-image: linear-gradient(to left, #f36507, #c71a04, #f36507);
+}
+.gradient-buttons .btn:hover,
+.gradient-button .btn:hover {
+    background-position: right;
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 700px) {
+    #sec-1 {
+        transform: translateY(0);
+    }
+    #sec-1 h1 {
+        font-size: 4rem;
+    }
+    #sec-1 .form-group {
+        margin-top: 3rem;
+    }
+    label {
+        font-size: 2rem;
+    }
+    .gradient-buttons {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+    .gradient-buttons .btn,
+    .gradient-button .btn {
+        width: 40%;
+        margin: 0.5rem auto;
+    }
+}
+
+/* sec 2 */
+
+#top-name span img {
+    position: relative;
+    top: 10%;
+    left: 1%;
+    /* transform: translate(-50%, -50%); */
+    height: 50px;
+}
+
+.form-group-2 {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    font-family: "Montserrat Alternates", sans-serif;
+}
+.form-group-2 h1 {
+    text-align: center;
+    margin: 2rem;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    font-family: "Indie Flower", cursive;
+}
+.form-group-2 h3 {
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px dashed #fff;
+}
+
+.form-group-2 p {
+    font-size: 1.5rem;
+    line-height: 1.3;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+}
+.data ul {
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    list-style-type: none;
+}
+.data ul li {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hide {
+    display: none;
+}
+
+@media screen and (max-width: 900px) {
+    #sec-2 {
+        width: 80%;
+        margin: 50px auto;
+    }
+}
+
+/* astrology icons */
+
+.ai {
+    font-style: normal;
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 24px;
+}
+.ai.aries,
+.ai.taurus,
+.ai.gemini,
+.ai.cancer,
+.ai.leo,
+.ai.virgo,
+.ai.libra,
+.ai.scorpio,
+.ai.sagittarius,
+.ai.capricorn,
+.ai.aquarius,
+.ai.pisces {
+    font-weight: normal;
+}
+.ai.aries:before {
+    content: "\2648";
+    display: inline;
+    text-decoration: none;
+}
+.ai.taurus:before {
+    content: "\2649";
+}
+.ai.gemini:before {
+    content: "\264A";
+}
+.ai.cancer:before {
+    content: "\264B";
+}
+.ai.leo:before {
+    content: "\264C";
+}
+.ai.virgo:before {
+    content: "\264D";
+}
+.ai.libra:before {
+    content: "\264E";
+}
+.ai.scorpio:before {
+    content: "\264F";
+}
+.ai.sagittarius:before {
+    content: "\2650";
+}
+.ai.capricorn:before {
+    content: "\2651";
+}
+.ai.aquarius:before {
+    content: "\2652";
+}
+.ai.pisces:before {
+    content: "\2653";
+}
+.ai.sun:before {
+    content: "\2609";
+}

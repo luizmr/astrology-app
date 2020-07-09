@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>astrology app</title>
+        <!-- css -->
+        <link rel="stylesheet" href="/styles.css" />
+        <!-- google fonts -->
+        <link
+            href="https://fonts.googleapis.com/css2?family=Indie+Flower&family=Montserrat+Alternates:wght@400;500;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <main class="container">
+            <div id="sec-1">
+                <h1>Astrology App</h1>
+
+                <div class="form-group">
+                    <label>Enter your zodiac sign</label>
+                    <span class="error" id="error"></span>
+                    <input
+                        type="text"
+                        placeholder="e.g. Leo or leo . . ."
+                        id="input"
+                    />
+                </div>
+
+                <div class="gradient-buttons" id="day-buttons">
+                    <button class="btn btn1" id="yesterday">
+                        Yesterday
+                    </button>
+                    <button class="btn btn1" id="today">
+                        Today
+                    </button>
+                    <button class="btn btn1" id="tomorrow">
+                        Tomorrow
+                    </button>
+                </div>
+            </div>
+            <div class="grid-container">
+                <div id="sec-2" class="hide form-group-2"></div>
+                <div class="gradient-button hide" id="back-btn">
+                    <button
+                        class="btn btn1"
+                        onclick="back()"
+                        style="font-size: 1.5rem;"
+                    >
+                        Back
+                    </button>
+                </div>
+            </div>
+        </main>
+
+        <!-- jquery -->
+        <script
+            src="https://code.jquery.com/jquery-3.5.1.js"
+            integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+            crossorigin="anonymous"
+        ></script>
+        <!-- script -->
+        <script src="/main.js"></script>
+    </body>
+</html>
