@@ -1,5 +1,5 @@
 <h1 align="center">
-    <img alt="searchMovies" title="#searchMovies" src="./assets/gif1.gif" />
+    <img alt="astrologyApp" title="#astrologyApp" src="./assets/gif1.gif" />
 </h1>
 
 ## 💻 About project
